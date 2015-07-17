@@ -53,6 +53,32 @@
   margin: 195px 0 0 560px;
 }
 /*------------------END BANNER------------------*/
+/*------------------BEGIN SIMLE------------------*/
+.simple {
+  background: #f6f9f9;
+}
+.simple__wrapper {
+  width: 1140px;
+  margin: 0 auto;
+  text-align: center;
+}
+.simple__header {
+  font-size: 4rem;
+  letter-spacing: 1px;
+  color: #2d3950;
+  margin: 80px 0 10px;
+  display: inline-block;
+  font-weight: normal;
+}
+.simple__desc {
+  font-size: 2rem;
+  color: #999999;
+  line-height: 3.2rem;
+  display: inline-block;
+  margin-bottom: 110px;
+  padding: 0 20px;
+}
+/*------------------END SIMLE------------------*/
 @font-face {
   font-family: 'LatoRegular';
   src: url('../fonts/LatoRegular/LatoRegular.eot');
