@@ -1,0 +1,41 @@
+body,
+html {
+	font-size: 10px;
+	margin: 0;
+	font-family: LatoRegular;
+}
+a {
+	text-decoration: none;
+	color: #fff;
+}
+
+
+.wrapper() {
+	width: 1140px;
+	margin: 0 auto; 
+}
+.top {
+	background: #f6f9f9;
+	&__wrapper {
+		.wrapper();
+		height:100px;
+		border: 1px solid transparent;
+		box-sizing: content-box;
+	}
+	&__logo {
+		height: 37px;
+		margin: 30px 0 0 27px;
+	}
+}
+.logo {
+	text-transform: uppercase;
+	font-size: 3rem;
+	line-height: 40px;
+	display: block;
+	font-family: LatoBold;
+	color: @logo-color;
+	padding-left: 50px;
+	background: url("../img/Logo-icon.png") no-repeat;
+	background-position: top left;
+}
+
