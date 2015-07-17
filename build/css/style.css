@@ -1,13 +1,4 @@
-body,
-html {
-  font-size: 10px;
-  margin: 0;
-  font-family: LatoRegular;
-}
-a {
-  text-decoration: none;
-  color: #fff;
-}
+/*------------------BEGIN TOP------------------*/
 .top {
   background: #f6f9f9;
 }
@@ -22,17 +13,46 @@ a {
   height: 37px;
   margin: 30px 0 0 27px;
 }
-.logo {
-  text-transform: uppercase;
-  font-size: 3rem;
-  line-height: 40px;
-  display: block;
-  font-family: LatoBold;
-  color: #2d3950;
-  padding-left: 50px;
-  background: url("../img/Logo-icon.png") no-repeat;
-  background-position: top left;
+/*------------------END TOP------------------*/
+/*------------------BEGIN BANNER------------------*/
+.banner {
+  background: url("../img/banner-bg.jpg") no-repeat center center;
+  background-size: cover;
 }
+.banner__wrapper {
+  height: 800px;
+  text-align: center;
+  width: 1140px;
+  margin: 0 auto;
+}
+.banner__content {
+  width: 600px;
+  display: inline-block;
+  text-align: center;
+}
+.banner__header {
+  font-size: 11rem;
+  line-height: 1;
+  letter-spacing: 5px;
+  color: #fff;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 18px 100px;
+  margin: 186px 0 0 0;
+  border-bottom: solid 2px #15a4fa;
+}
+.banner__desc {
+  display: inline-block;
+  font-size: 2rem;
+  line-height: 1;
+  color: #fff;
+  margin: 40px 0 85px;
+  padding: 0;
+}
+.banner__down {
+  margin: 195px 0 0 560px;
+}
+/*------------------END BANNER------------------*/
 @font-face {
   font-family: 'LatoRegular';
   src: url('../fonts/LatoRegular/LatoRegular.eot');
@@ -46,4 +66,39 @@ a {
   src: url('../fonts/LatoBold/LatoBold.eot?#iefix') format('embedded-opentype'), url('../fonts/LatoBold/LatoBold.woff') format('woff'), url('../fonts/LatoBold/LatoBold.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
+}
+body,
+html {
+  font-size: 10px;
+  margin: 0;
+  font-family: LatoRegular;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+.but {
+  padding: 18px 34px;
+  border: 1px solid #15a4fa;
+  border-radius: 3px;
+  font-size: 1.8rem;
+  color: #fff;
+}
+.down {
+  display: block;
+  width: 20px;
+  height: 12px;
+  background: url("../img/sprite.png") no-repeat top left;
+  background-position: -121px 0;
+}
+.logo {
+  text-transform: uppercase;
+  font-size: 3rem;
+  line-height: 4rem;
+  display: block;
+  font-family: LatoBold;
+  color: #2d3950;
+  padding-left: 50px;
+  background: url("../img/Logo-icon.png") no-repeat;
+  background-position: top left;
 }
