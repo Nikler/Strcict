@@ -22,6 +22,7 @@
 .banner {
 	background: url("../img/banner-bg.jpg") no-repeat center center;
 	background-size: cover;
+	position: relative;
 	&__wrapper {
 		height: 800px;
 		text-align: center;
@@ -52,7 +53,9 @@
 		padding: 0;  
 	}
 	&__down {
-		margin: 195px 0 0 (1140px/2px-10px);
+		margin: 0 0 0 (1140px/2px-10px);
+		position: absolute;
+		bottom: 90px;
 	}
 }
 
@@ -176,6 +179,23 @@
 		float: left;
 		margin: 0 30px 30px 0;
 		border-radius: 3px;
+		overflow: hidden;
+	}
+	&__item-hover {
+		width: 100%;
+		height: 100%;
+		background: rgba(21, 164, 250 ,.9);
+		border-radius: 3px;
+		display: block;
+		text-align: center;
+		transition: all 0.25s ease;
+		margin-left: -360px;
+	}
+	&__item:hover &__item-hover {
+		display: block;
+		margin-left: 0;
+		transition: all 0.5s ease;
+
 	}
 	&__item:nth-child(1) {
 		background: url("../img/img1.jpg") no-repeat;
@@ -265,17 +285,34 @@
 	display: block;
 	margin-right: 5px;
 	float: left;
+	transition: all 0.1s linear;
 	&--f {
 		background-position: -229px 11px;
+		&:hover {
+			background-color: #3b5998;
+			transform: scale(1.05);
+		};
 	}
 	&--tw {
 		background-position: -270px 14px;
+		&:hover {
+			background-color: #55acee;
+			transform: scale(1.05);
+		};
 	}
 	&--g {
 		background-position: -312px 13px;
+		&:hover {
+			background-color: #dd4b39;
+			transform: scale(1.05);
+		};
 	}
 	&--in {
 		background-position: -353px 13px;
+		&:hover {
+			background-color: #0976b4;
+			transform: scale(1.05);
+		};
 	}
 }
 
