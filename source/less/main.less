@@ -136,6 +136,7 @@
 	}
 	&__desc {
 		font-size: @p-size;
+		line-height: @p-height;
 		color: #999;
 		margin-bottom: 70px;
 	}
@@ -143,3 +144,139 @@
 }
 
 /*------------------END FEATURE------------------*/
+
+
+/*------------------BEGIN PORTFOLIO------------------*/
+
+.portfolio {
+	background: #f6f9f9;
+	&__wrapper {
+		.wrapper();
+		text-align: center;
+	}
+	&__header {
+		font-size: 4rem;
+		letter-spacing: 1px;
+		color: @h1-color;
+		margin: 70px 0 0;
+		display: inline-block;
+		font-weight: normal;
+	}
+	&__desc {
+		font-size: @p-size;
+		color: #999;
+		margin-bottom: 70px;
+	}
+	&__wrapper-items {
+		margin-bottom: 120px;
+	}
+	&__item {
+		width: 360px;
+		height: 260px;
+		float: left;
+		margin: 0 30px 30px 0;
+		border-radius: 3px;
+	}
+	&__item:nth-child(1) {
+		background: url("../img/img1.jpg") no-repeat;
+	}
+	&__item:nth-child(2) {
+		background: url("../img/img2.jpg") no-repeat;
+	}
+	&__item:nth-child(3) {
+		background: url("../img/img3.jpg") no-repeat;
+		margin: 0 0 30px 0;
+	}
+	&__item:nth-child(4) {
+		background: url("../img/img4.jpg") no-repeat;
+		margin: 0 30px 0 0;
+	}
+	&__item:nth-child(5) {
+		background: url("../img/img5.jpg") no-repeat;
+		margin: 0 30px 0 0;
+	}
+	&__item:nth-child(6) {
+		background: url("../img/img6.jpg") no-repeat;
+		margin: 0;
+	}
+}
+
+/*------------------END PORTFOLIO------------------*/
+
+
+/*------------------BEGIN FORMS------------------*/
+
+.forms {
+	background: url("../img/forms-bg.jpg") no-repeat top center;
+	height: 700px;
+	&__wrapper {
+		.wrapper();
+		text-align: center;
+	}
+	&__header {
+		font-size: 4rem;
+		letter-spacing: 1px;
+		color: #fff;
+		margin: 70px 0 0;
+		display: inline-block;
+		font-weight: normal;
+	}
+	&__desc {
+		font-size: @p-size;
+		color: #999;
+		margin-bottom: 50px;
+	}
+	&__quickly {
+		font-size: @p-size;
+		color: #999;
+		margin-top: 250px;
+	}
+}
+
+
+/*------------------END FORMS------------------*/
+
+
+
+/*------------------BEGIN FOOTER------------------*/
+
+.footer {
+	background: #f6f9f9;
+	height: 90px;
+	&__wrapper {
+		.wrapper();
+	}
+	&__copy {
+		font-size: @p-size;
+		color: #999;
+		margin-top: 40px;
+		float: left;
+	}
+	&__social-wrapper {
+		margin-top: 25px;
+		float: right;
+	}
+}
+.social-icon {
+	width: 40px;
+	height: 40px;
+	background:	url("../img/sprite.png") no-repeat #15a4fa;
+	border-radius: 3px;
+	display: block;
+	margin-right: 5px;
+	float: left;
+	&--f {
+		background-position: -229px 11px;
+	}
+	&--tw {
+		background-position: -270px 14px;
+	}
+	&--g {
+		background-position: -312px 13px;
+	}
+	&--in {
+		background-position: -353px 13px;
+	}
+}
+
+/*------------------END FOOTER------------------*/
