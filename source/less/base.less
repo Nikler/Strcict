@@ -81,3 +81,34 @@ a {
 	display: table;
 	clear: both;
 }
+.popup, photo {
+	width: 1140px;
+	height: 550px;
+	border-radius: 5px;
+	border: 3px solid #999999;
+	background: url("../img/popup-bg.jpg") no-repeat;
+    position:fixed;
+    left:0;
+	top:0;
+	right:0;
+	bottom: 0;
+	margin: auto;
+	z-index:1001;
+	display: none;
+}
+.close {
+	width: 40px;
+	height: 40px;
+	background: #15a4fa;
+	font-size: 1.8rem;
+	position: absolute;
+	top: -23px;
+	right: 20px;
+	text-align: center;
+	line-height: 40px;
+	font-family: LatoBold;
+	transition: all 0.2s ease-in;
+	&:hover {
+		background: #fa4b15;
+	};
+}

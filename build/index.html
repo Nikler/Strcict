@@ -59,13 +59,18 @@ to be used for different projects.</p>
 			</div>	
 	<div class="portfolio clearfix">
 		<div class="portfolio__wrapper">
+		<!-- popup -->
+		<div class="popup photo">
+			<a href="#" class="close">x</a>
+		</div>
+		<!-- /popup -->
 			<h2 class="portfolio__header">Showcase your work like a pro.</h2>
 			<p class="portfolio__desc">Contact me if you like my work</p>
 			<div class="portfolio__wrapper-items clearfix">
 				<div class="portfolio__item">
 					<div class="portfolio__item-hover">
-						<a href="#" class="but-zoom"></a>
-						<a href="#" class="but-link"></a>
+						<a href="#" rel="photo" class="but-zoom but-popup"></a>
+						<a href="#" rel="photo" class="but-link but-popup"></a>
 					</div>
 				</div>
 				<div class="portfolio__item">
@@ -120,6 +125,9 @@ to be used for different projects.</p>
 					<a href="#" class="social-icon social-icon--in"></a>
 				</div>
 			</div>
-		</div>	
+		</div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>		
+<script src="js/popup.js"></script>
+<script src="js/scroll.js"></script>				
 </body>
 </html>
